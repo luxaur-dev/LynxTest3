@@ -1,0 +1,71 @@
+	<html>
+<head>
+    <title>Test 3</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Find the pair">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href='css/css.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="flex-container">
+  <table id="mainfield">
+    <tr>
+      <td>
+        <table id="tilefield">
+          <!-- ряд 1 -->
+          <tr>
+            <tr>
+              <td class="tile" id="0"></td>
+              <td class="tile" id="1"></td>
+              <td class="tile" id="2"></td>
+              <td class="tile" id="3"></td>
+            </tr>
+            <!-- ряд 2 -->
+            <tr>
+              <td class="tile" id="4"></td>
+              <td class="tile" id="5"></td>
+              <td class="tile" id="6"></td>
+              <td class="tile" id="7"></td>
+            </tr>
+            <!-- ряд 3 -->
+            <tr>
+              <td class="tile" id="8"></td>
+              <td class="tile" id="9"></td>
+              <td class="tile" id="10"></td>
+              <td class="tile" id="11"></td>
+            </tr>
+            <!-- ряд 4 -->
+            <tr>
+              <td class="tile" id="12"></td>
+              <td class="tile" id="13"></td>
+              <td class="tile" id="14"></td>
+              <td class="tile" id="15"></td>
+            </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+        <td><button id="startButton" onclick="gameStart();">Старт</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div id="timer">00:00.000</div>
+        </td>
+      </tr>
+  </table>
+  <!-- Всплывающее окно, отображающее результат -->
+  <div id="popup" class="popup">
+  <span>Вы выиграли!</span><br><br>
+  <span>Затраченное время: </span><span id="result">0</span><span> сек.</span>
+    <button onclick="hide();" id="okbutton">OK</button>
+  </div>
+</div>
+<script src="js/gameStart.js"></script>
+<script src="js/colorGen.js"></script>
+<script src="js/clicked.js"></script>
+<script src="js/showPopup.js"></script>
+<script src="js/checkGameState.js"></script>
+<script src="js/hide.js"></script>
+<script src="js/timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: small;
+  font-family: Helvetica;
+}
+
+#mainfield {
+  display: flex;
+  height: wrap-content;
+  width: wrap-content;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #000000;
+}
+
+#tilefield {
+  border-collapse: collapse;
+  padding: 0px;
+  pointer-events: none;
+}
+
+#startButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#okbutton {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #689EFC;
+  border-radius: 5px;
+  border: none;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  padding: 0px;
+  border-spacing: 0px 0px;
+  height: 50px;
+  width: 50px;
+  background: #FFFFFF;
+  border: 1px solid #d3d3d3;
+  pointer-events: auto;
+}
+
+.popup {
+  display: none;
+  width: 250px;
+  height: 150px;
+  text-align: left;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid #008080;
+  color: #008080;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
