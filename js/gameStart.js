@@ -1,8 +1,8 @@
 // gameStart.js
 // Запускает таймер, сбрасывает поле и открывает доступ для кликов
 
-const tileField = document.getElementById("tilefield");
-const tiles = document.getElementsByClassName("tile");
+const tileField = document.getElementById('tilefield');
+
 let isGameStarted = false;
 
 function gameStart() {
@@ -21,8 +21,10 @@ function gameStart() {
 }
 
 function resetTiles () {
+	const tiles = document.getElementsByClassName('tile');
+
     for (let i = 0; i < tiles.length; i++) {
-        tiles[i].style.background = "#FFFFFF";
-		tiles[i].style.pointerEvents = "auto";
+        tiles[i].style.background = '#FFFFFF';
+		tiles[i].style.pointerEvents = 'auto';
 	}
 }

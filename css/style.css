@@ -8,8 +8,6 @@ body {
 
 #mainfield {
   display: flex;
-  height: wrap-content;
-  width: wrap-content;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -18,11 +16,11 @@ body {
 
 #tilefield {
   border-collapse: collapse;
-  padding: 0px;
+  padding: 0;
   pointer-events: none;
 }
 
-#startButton {
+#startbutton {
   margin-top: 15px;
   margin-bottom: 15px;
 }

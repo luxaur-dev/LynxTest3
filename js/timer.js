@@ -1,6 +1,7 @@
 // timer.js
-// Запуск, сброс и обработка отсчета времени 
-const timer = document.getElementById("timer");
+// Запуск, сброс и обработка отсчета времени
+
+const timer = document.getElementById('timer');
 
 let interval;
 let ms = 0;
@@ -45,5 +46,5 @@ function updateTimer() {
 }
 function formString(value) {
 		const maxValue = 10;
-		return value < maxValue ? "0" + value : value
+		return value < maxValue ? '0' + value : value
 }
